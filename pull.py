@@ -36,7 +36,7 @@ class SocialData():
         with open(file_path, 'w') as outfile:
             print("writing file to: ",file_path)
             json.dump(self.posts, outfile) 
-
+        outfile.close()
         print("done")
 
 
